@@ -20,7 +20,7 @@ namespace WebAppUsers.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View(users);
+            return View(new User());
         }
         [HttpPost]
         public IActionResult Create(User model)
